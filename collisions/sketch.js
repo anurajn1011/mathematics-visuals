@@ -3,5 +3,12 @@ function setup() {
 }
 
 function draw() {
-  background(220);
+  background("aqua");
+  if (mouseIsPressed == true) {
+    fill(0);
+  } else {
+    fill(255);
+  }
+
+  circle(mouseX, mouseY, 100);
 }
