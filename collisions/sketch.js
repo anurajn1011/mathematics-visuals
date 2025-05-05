@@ -1,14 +1,15 @@
 function setup() {
-  createCanvas(400, 400);
+  createCanvas(windowWidth, windowHeight);
 }
 
 function draw() {
-  background("aqua");
-  if (mouseIsPressed == true) {
-    fill(0);
-  } else {
-    fill(255);
-  }
+  background("green");
 
+  push();
+  fill("blue");
+  ellipse(50, 0, 100, 200);
+  pop();
+
+  fill("red");
   circle(mouseX, mouseY, 100);
 }
