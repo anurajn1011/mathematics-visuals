@@ -12,4 +12,9 @@ function draw() {
 
   fill("red");
   circle(mouseX, mouseY, 100);
+
+  push();
+  fill("white");
+  text(`${mouseX}, ${mouseY}`, 20, 20);
+  pop();
 }
