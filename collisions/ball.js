@@ -15,7 +15,7 @@ class Ball {
     }
 
     display() {
-        fill(0);
+        fill(255, 0, 0);
         circle(this.position.x, this.position.y, 2 * this.radius);
     }
 }

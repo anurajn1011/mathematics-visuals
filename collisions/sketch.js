@@ -1,17 +1,33 @@
 // ball objects declared
 // constructor (x, y, velocity_x, velocity_y, radius, mass)
-let ball;
+const LENGTH = 3;
+let ballArr = []
 
 function setup() {
   createCanvas(500, 500);
-  ball = new Ball(100, 150, -2, -6, 35, 1);
+  for (let i = 0; i < LENGTH; i++) {
+    ballArr.push(new Ball(random(0, 500), random(0, 500), random(-4, 4), random(-4, 4), random(10, 35), random(1, 100)))
+  }
 }
 
 function draw() {
-  fill("white");
-  rect(0,0,width,height);
-  ball.move();
-  ball.display();
+  background(230);
+
+  for (let i = 0; i < ballArr.length; i++) {
+    ballArr[i].move();
+  }
+  //collision
+  for (let i = 0; i < ballArr.length; i++) {
+    for (let j = i + 1; j < ballArr.length; j++) {
+      if (are_colliding(ballArr[i], ballArr[j])){
+        collided(ballArr[i], ballArr[j]);
+      }
+    }
+  }
+
+  for (let i = 0; i < ballArr.length; i++) {
+    ballArr[i].display();
+  }
 
   // push();
   // fill("blue");
