@@ -3,7 +3,8 @@ class Ball {
         this.position = createVector(x, y);
         this.velocity_vector = createVector(velocity_x, velocity_y);
         this.radius = radius;
-        this.mass = mass; // the mass of the body will just be the area
+        this.mass = PI * sq(this.radius); // the mass of the body will just be the area
+        this.color = color(random(0, 255), random(0, 255), random(0, 255))
     }
 
     move() {
@@ -15,7 +16,7 @@ class Ball {
     }
 
     display() {
-        fill(255, 0, 0);
+        fill(this.color);
         circle(this.position.x, this.position.y, 2 * this.radius);
     }
 }

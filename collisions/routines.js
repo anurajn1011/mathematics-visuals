@@ -55,8 +55,11 @@ function collided(ball1, ball2) {
     // compute the result of the collision. Reason we only pass in the x-velocity of ball2 follows from the fact that the point of contact is along the x-axis.
     // this means that the momentum is transferred along the x-axis, so we can ignore the y-component.
     let [velocity2, velocity1] = elastic_collision(ball2.mass, ball1.mass, ball2.velocity_vector.x);
-    ball1.velocity_vector.add(velocity1);
-    ball2.velocity_vector.add(velocity2);
+    ball1.velocity_vector.x = velocity1;
+    ball2.velocity_vector.x = velocity2;
+
+    // after collision we need to peel the balls away
+    ball2.position.x = ball1.radius + ball2.radius + 0.1;
     
     // restoring to former coordinate system
     ball2.position.rotate(original_angle);

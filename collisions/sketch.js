@@ -1,17 +1,18 @@
 // ball objects declared
 // constructor (x, y, velocity_x, velocity_y, radius, mass)
-const LENGTH = 3;
+const LENGTH = 10;
 let ballArr = []
 
 function setup() {
   createCanvas(500, 500);
   for (let i = 0; i < LENGTH; i++) {
-    ballArr.push(new Ball(random(0, 500), random(0, 500), random(-4, 4), random(-4, 4), random(10, 35), random(1, 100)))
+    ballArr.push(new Ball(random(0, 500), random(0, 500), random(-2, 2), random(-2, 2), random(10, 35), random(1, 4)))
   }
 }
 
 function draw() {
   background(230);
+  colorMode(HSB);
 
   for (let i = 0; i < ballArr.length; i++) {
     ballArr[i].move();
