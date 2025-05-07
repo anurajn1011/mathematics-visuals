@@ -1,4 +1,4 @@
-export function wrap_around(center, radius, max_edge) {
+function wrap_around(center, radius, max_edge) {
     /* 
         Method for wrapping the ball around the edges of the canvas.
         When the center of the cirlce crosses the boundary, we wrap the object around.

@@ -1,5 +1,3 @@
-import { wrap_around } from "./routines";
-
 class Ball {
     constructor (x, y, velocity_x, velocity_y, radius, mass) {
         this.position = createVector(x, y);
@@ -14,5 +12,10 @@ class Ball {
         let coord_x = wrap_around(this.position.x, this.radius, width);
         let coord_y = wrap_around(this.position.y, this.radius, height);
         this.position.set(coord_x, coord_y);
+    }
+
+    display() {
+        fill(0);
+        circle(this.position.x, this.position.y, 2 * this.radius);
     }
 }
