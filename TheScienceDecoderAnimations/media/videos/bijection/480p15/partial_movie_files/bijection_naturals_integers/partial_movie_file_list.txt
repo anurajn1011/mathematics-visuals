@@ -1,7 +1,5 @@
 # This file is used internally by FFMPEG.
-file 'file:C:/Users/User/Documents/Projects/mathematics_visualization/TheScienceDecoderAnimations/media/videos/bijection/480p15/partial_movie_files/bijection_naturals_integers/1185818338_577128253_223132457.mp4'
-file 'file:C:/Users/User/Documents/Projects/mathematics_visualization/TheScienceDecoderAnimations/media/videos/bijection/480p15/partial_movie_files/bijection_naturals_integers/624642324_2552855209_4157442132.mp4'
-file 'file:C:/Users/User/Documents/Projects/mathematics_visualization/TheScienceDecoderAnimations/media/videos/bijection/480p15/partial_movie_files/bijection_naturals_integers/624642324_1195147734_1948232111.mp4'
-file 'file:C:/Users/User/Documents/Projects/mathematics_visualization/TheScienceDecoderAnimations/media/videos/bijection/480p15/partial_movie_files/bijection_naturals_integers/624642324_4217992463_2916146357.mp4'
-file 'file:C:/Users/User/Documents/Projects/mathematics_visualization/TheScienceDecoderAnimations/media/videos/bijection/480p15/partial_movie_files/bijection_naturals_integers/624642324_2872656045_2935561070.mp4'
-file 'file:C:/Users/User/Documents/Projects/mathematics_visualization/TheScienceDecoderAnimations/media/videos/bijection/480p15/partial_movie_files/bijection_naturals_integers/624642324_2552855209_1863203308.mp4'
+file 'file:C:/Users/User/Documents/Projects/mathematics_visualization/TheScienceDecoderAnimations/media/videos/bijection/480p15/partial_movie_files/bijection_naturals_integers/1185818338_470711204_223132457.mp4'
+file 'file:C:/Users/User/Documents/Projects/mathematics_visualization/TheScienceDecoderAnimations/media/videos/bijection/480p15/partial_movie_files/bijection_naturals_integers/624642324_2552855209_278510342.mp4'
+file 'file:C:/Users/User/Documents/Projects/mathematics_visualization/TheScienceDecoderAnimations/media/videos/bijection/480p15/partial_movie_files/bijection_naturals_integers/624642324_4187538585_2375220172.mp4'
+file 'file:C:/Users/User/Documents/Projects/mathematics_visualization/TheScienceDecoderAnimations/media/videos/bijection/480p15/partial_movie_files/bijection_naturals_integers/624642324_2552855209_1626010243.mp4'

@@ -1,11 +1,12 @@
 from manim import *
 
-class bijection_naturals_integers(Scene):
+class bijection_naturals_integers_v2(Scene):
     def construct(self):
         '''
             First Scene: Initial depiction of the number lines showing how they are, seemingly, 
             not in bijection with one another as the integers looks to cover a larger line.
         '''
+        frame_height = config.frame_height
         # integers number line
         integers = NumberLine(
             x_range=[-5, 6, 1],
@@ -47,7 +48,6 @@ class bijection_naturals_integers(Scene):
         shift_naturals = integers.n2p(0)[0] - naturals.n2p(0)[0]
         naturals_group.shift(RIGHT * shift_naturals)
         line_group = VGroup(integers_group, naturals_group)
-
         '''
             Second Scene: Depicting the bijection between the integers and naturals
             by rearranging the order of the integers.
@@ -96,10 +96,18 @@ class bijection_naturals_integers(Scene):
         '''
             Animating the scene
         '''
+        line_group.move_to(ORIGIN)
+        new_line_group.move_to(ORIGIN)
         # self.add(rearranged_integers_group)
-        self.play(Create(integers_group), Create(naturals_group))
+        self.play(Create(line_group))
         self.wait(3)
-        self.play(Transform(integers_group, rearranged_integers_group))
-        self.wait(1)
-        self.play(Transform(naturals_group, shifted_naturals_group))
+        self.play(Transform(line_group, new_line_group))
         self.wait(3)
+
+        # original animation
+        # self.play(Create(integers_group), Create(naturals_group))
+        # self.wait(3)
+        # self.play(Transform(integers_group, rearranged_integers_group))
+        # self.wait(1)
+        # self.play(Transform(naturals_group, shifted_naturals_group))
+        # self.wait(3)
