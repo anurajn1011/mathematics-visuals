@@ -1,6 +1,6 @@
 from manim import *
 
-class bijection_naturals_integers_v2(Scene):
+class bijection_naturals_integers(Scene):
     def construct(self):
         '''
             First Scene: Initial depiction of the number lines showing how they are, seemingly, 
@@ -99,15 +99,15 @@ class bijection_naturals_integers_v2(Scene):
         line_group.move_to(ORIGIN)
         new_line_group.move_to(ORIGIN)
         # self.add(rearranged_integers_group)
-        self.play(Create(line_group))
-        self.wait(3)
-        self.play(Transform(line_group, new_line_group))
-        self.wait(3)
+        # self.play(Create(line_group))
+        # self.wait(3)
+        # self.play(Transform(line_group, new_line_group))
+        # self.wait(3)
 
         # original animation
-        # self.play(Create(integers_group), Create(naturals_group))
-        # self.wait(3)
-        # self.play(Transform(integers_group, rearranged_integers_group))
-        # self.wait(1)
-        # self.play(Transform(naturals_group, shifted_naturals_group))
-        # self.wait(3)
+        self.play(Create(integers_group), Create(naturals_group))
+        self.wait(3)
+        self.play(Transform(integers_group, rearranged_integers_group))
+        self.wait(1)
+        self.play(Transform(naturals_group, shifted_naturals_group))
+        self.wait(3)
